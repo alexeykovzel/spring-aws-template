@@ -1,0 +1,31 @@
+# Gradle
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+build/
+
+# Maven
+pom.xml
+target/
+
+# Intellij IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+
+# VS Code
+.vscode/
+
+# CDK
+.cdk.staging/
+cdk.out/
+.aws/
+*.swp
+
+# Log files
+logs/
+
+# Hidden files (e.g. credentials)
+fi-aws-cdk/cdk.context.json
+example-web/main/java/resources/.env

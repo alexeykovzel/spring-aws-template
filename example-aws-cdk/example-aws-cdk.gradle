@@ -1,0 +1,11 @@
+dependencies {
+    implementation 'software.amazon.awscdk:aws-cdk-lib:2.46.0'
+    implementation 'software.constructs:constructs:10.1.131'
+}
+
+task runCdk(type: JavaExec) {
+    group = "Execution"
+    description = "Run the CDK deployment class"
+    classpath = sourceSets.main.runtimeClasspath
+    main = "com.alexeykovzel.fi.ElasticBeanstalkApp"
+}

@@ -1,0 +1,19 @@
+configure(allprojects) { project ->
+    apply plugin: "java"
+
+    group = "com.alexeykovzel.example"
+
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+
+    repositories {
+        mavenCentral()
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
+    dependencies {
+    }
+}

@@ -1,0 +1,43 @@
+# Choose one of the following profiles: [ prod, dev ]
+spring.profiles.active: dev
+
+### Website ####
+spring:
+  application.name: example
+  web.resources.static-locations: classpath:/web/
+  mvc.static-path-pattern: /**
+
+server:
+  error.include-message: always
+  tomcat.use-relative-redirects: true
+  error.include-binding-errors: always
+  error.whitelabel.enabled: false
+  servlet.session.cookie.max-age: 8h
+  servlet.session.timeout: 8h
+  port: 5000
+
+# Load balancer terminates all https connections, and then forwards traffic over http.
+# Thus, to exclude those requests from https, below headers are added:
+server.tomcat:
+  remoteip.protocol-header: X-Forwarded-Proto
+  remoteip.remote-ip-header: X-Forwarded-For
+
+# import hidden config from git (e.g. credentials)
+spring.config.import:
+  - .env/accounts.yml
+
+# Save server logs so that they can be accessed via /debug endpoint
+logging.file.name: logs/app.log
+
+### PostgreSQL database ####
+spring.jpa:
+  database: POSTGRESQL
+  hibernate.ddl-auto: update
+  properties.hibernate:
+    jdbc.lob.non_contextual_creation: true
+    jdbc.batch_size: 32
+    order_inserts: true
+    order_updates: false
+    generate_statistics: false
+    format_sql: false
+    show_sql: false

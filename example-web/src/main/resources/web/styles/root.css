@@ -1,0 +1,11 @@
+@import "base/reset.css";
+@import "base/text.css";
+@import "base/layout.css";
+
+@import "blocks/header.css";
+@import "blocks/footer.css";
+
+:root {
+    /* colors */
+    --blue: #314069;
+}

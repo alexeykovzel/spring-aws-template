@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    margin-right: auto;
+    text-align: left;
+}
+
+.right {
+    margin-left: auto;
+    text-align: right;
+    align-items: end;
+}
+
+.abs-ctr {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}

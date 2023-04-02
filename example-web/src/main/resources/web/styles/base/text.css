@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, p {
+    color: black;
+}
+
+h1 {
+    font-size: 4.8rem
+}
+
+h2 {
+    font-size: 3rem
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500
+}
+
+p, label {
+    font-size: 1.4rem;
+    font-weight: 300
+}
+
+@media screen and (max-width: 40rem) {
+
+    h1 {
+        font-size: 3.6rem
+    }
+
+    h2 {
+        font-size: 2.4rem
+    }
+
+    h3 {
+        font-size: 1.6rem
+    }
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version */
+}
+
+.wrap {
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    white-space: pre-wrap; /* CSS3 */
+    word-wrap: break-word; /* IE */
+}

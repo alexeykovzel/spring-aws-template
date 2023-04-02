@@ -1,0 +1,54 @@
+@import "root.css";
+
+.logs {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0;
+    width: 95%;
+}
+
+.logs span {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.log-date {
+    width: 12rem;
+}
+
+.log-type {
+    width: 5rem;
+    font-weight: 500;
+}
+
+.log-thread {
+    width: 10rem;
+    text-align: end;
+}
+
+.log-path {
+    width: 20rem;
+}
+
+.stack-trace {
+    cursor: pointer;
+    padding: 2rem 0;
+}
+
+.stack-trace>p {
+    color: #999;
+}
+
+@media screen and (max-width: 100rem) {
+    .logs span {
+        display: inline;
+        white-space: normal;
+        width: 90%;
+    }
+
+    .logs {
+        gap: 2rem;
+    }
+}
