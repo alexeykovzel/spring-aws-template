@@ -27,5 +27,5 @@ cdk.out/
 logs/
 
 # Hidden files (e.g. credentials)
-fi-aws-cdk/cdk.context.json
-example-web/main/java/resources/.env
+example-aws-cdk/cdk.context.json
+example-web/src/main/resources/.env/
